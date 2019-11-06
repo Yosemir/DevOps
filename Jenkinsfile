@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        unstable 'test'
+        archiveArtifacts '**/*.war'
       }
     }
 
