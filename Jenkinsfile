@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Demo'
+        sh 'mvn -B clean package'
       }
     }
 
